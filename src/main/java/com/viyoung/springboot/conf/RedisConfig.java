@@ -17,14 +17,13 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 
-
+/**
+ * Base on Spring Boot 2.0.1
+ */
 @EnableCaching
 @Configuration
 @ConditionalOnClass(RedisOperations.class)
 @EnableConfigurationProperties(RedisProperties.class)
-/**
- * Base on Spring Boot 2.0.1
- */
 public class RedisConfig extends CachingConfigurerSupport {
 
 
