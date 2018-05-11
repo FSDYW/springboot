@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<!--<p th:text="|Here is  ${name}  Space|">123</p>-->
+
+<!--<a th:if="${name == 'Vi-Young'}"> give me five</a>-->
+<!--<a th:unless="${user.userName == 'Vi'}">Go Go Go</a>-->
+<tr th:each="u,iterStat : ${list}">
+    <th scope="row" th:text="${u.userName}">1</th>
+    </br>
+    <td th:text="${iterStat.index}">index</td>
+</tr>
+<!--<span th:text="${user.userName}"></span>-->
+<!--<span th:text="${user.email}"></span>-->
+
+<!--<li th:each="l: ${list}">-->
+    <!--<label th:text="${l}"/>-->
+
+<!--<div th:object="${user}">-->
+    <!--<span th:text="*{userName}"></span>-->
+<!--</div>-->
+
+<!--<form th:action="@{/toHome}">-->
+    <!--<button type="submit">Goto</button>-->
+<!--</form>-->
+<!--<a href="index.html" th:href="@{/toHome}"></a>-->
+
+
+</body>
+
+</html>
